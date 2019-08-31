@@ -1,0 +1,75 @@
+Node: funcMRIQC (fMRI_HMC_afni (gen_ref (registration)
+======================================================
+
+
+ Hierarchy : workflow_enumerator.funcMRIQC.fMRI_HMC_afni.gen_ref
+ Exec ID : gen_ref.a1
+
+
+Original Inputs
+---------------
+
+
+* in_file : /mnt/scrap/repronim/data/ds000003-qc/work/workflow_enumerator/funcMRIQC/_in_file_..mnt..scrap..repronim..data..ds000003-qc..sourcedata..sub-13..func..sub-13_task-rhymejudgment_bold.nii.gz/sanitize/sub-13_task-rhymejudgment_bold_valid.nii.gz
+* mc_method : AFNI
+* sbref_file : <undefined>
+
+Execution Inputs
+----------------
+
+
+* in_file : /mnt/scrap/repronim/data/ds000003-qc/work/workflow_enumerator/funcMRIQC/_in_file_..mnt..scrap..repronim..data..ds000003-qc..sourcedata..sub-13..func..sub-13_task-rhymejudgment_bold.nii.gz/sanitize/sub-13_task-rhymejudgment_bold_valid.nii.gz
+* mc_method : AFNI
+* sbref_file : <undefined>
+
+
+Execution Outputs
+-----------------
+
+
+* n_volumes_to_discard : <undefined>
+* ref_image : /mnt/scrap/repronim/data/ds000003-qc/work/workflow_enumerator/funcMRIQC/fMRI_HMC_afni/_in_file_..mnt..scrap..repronim..data..ds000003-qc..sourcedata..sub-13..func..sub-13_task-rhymejudgment_bold.nii.gz/gen_ref/ref_bold.nii.gz
+
+
+Runtime info
+------------
+
+
+* duration : 21.520676
+* hostname : smaug
+* prev_wd : /mnt/scrap/repronim/data/ds000003-qc
+* working_dir : /mnt/scrap/repronim/data/ds000003-qc/work/workflow_enumerator/funcMRIQC/fMRI_HMC_afni/_in_file_..mnt..scrap..repronim..data..ds000003-qc..sourcedata..sub-13..func..sub-13_task-rhymejudgment_bold.nii.gz/gen_ref
+
+
+Environment
+~~~~~~~~~~~
+
+
+* AFNI_IMSAVE_WARNINGS : NO
+* AFNI_MODELPATH : /opt/afni/models
+* AFNI_PLUGINPATH : /opt/afni/plugins
+* AFNI_TTATLAS_DATASET : /opt/afni/atlases
+* ANTSPATH : /usr/lib/ants
+* CPATH : /usr/local/miniconda/include/:
+* DATALAD_CONTAINER_NAME : containers/bids-mriqc
+* FSLDIR : /usr/share/fsl/5.0
+* FSLMULTIFILEQUIT : TRUE
+* FSLOUTPUTTYPE : NIFTI_GZ
+* FSLTCLSH : /usr/bin/tclsh
+* FSLWISH : /usr/bin/wish
+* HOME : /home/bidsapp
+* LANG : en_US.UTF-8
+* LC_ALL : en_US.UTF-8
+* LD_LIBRARY_PATH : /usr/lib/fsl/5.0::/.singularity.d/libs
+* MKL_NUM_THREADS : 1
+* MKL_THREADING_LAYER : INTEL
+* OMP_NUM_THREADS : 1
+* PATH : /usr/local/miniconda/bin:/opt/afni:/usr/lib/ants:/usr/lib/fsl/5.0:/usr/lib/afni/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+* POSSUMDIR : /usr/share/fsl/5.0
+* PS1 : Singularity> 
+* PWD : /mnt/scrap/repronim/data/ds000003-qc
+* PYTHONNOUSERSITE : 1
+* SINGULARITY_CONTAINER : MD5E-s2914574367--827e2277cfe2e482546b18535ca18251.1.sing
+* SINGULARITY_NAME : MD5E-s2914574367--827e2277cfe2e482546b18535ca18251.1.sing
+* TERM : screen
+

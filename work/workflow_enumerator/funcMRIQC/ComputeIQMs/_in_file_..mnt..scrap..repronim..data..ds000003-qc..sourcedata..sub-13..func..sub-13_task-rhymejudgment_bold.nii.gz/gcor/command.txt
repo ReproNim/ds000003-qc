@@ -1,0 +1,2 @@
+@compute_gcor -mask /mnt/scrap/repronim/data/ds000003-qc/work/workflow_enumerator/funcMRIQC/ComputeIQMs/_in_file_..mnt..scrap..repronim..data..ds000003-qc..sourcedata..sub-13..func..sub-13_task-rhymejudgment_bold.nii.gz/gcor/sub-13_task-rhymejudgment_bold_valid_volreg_tstat_brain_mask_ero.nii.gz -input /mnt/scrap/repronim/data/ds000003-qc/work/workflow_enumerator/funcMRIQC/ComputeIQMs/_in_file_..mnt..scrap..repronim..data..ds000003-qc..sourcedata..sub-13..func..sub-13_task-rhymejudgment_bold.nii.gz/gcor/sub-13_task-rhymejudgment_bold_valid_volreg.nii.gz
+

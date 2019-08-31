@@ -1,0 +1,2 @@
+fslmaths /mnt/scrap/repronim/data/ds000003-qc/work/workflow_enumerator/funcMRIQC/fMRIBrainMask/_in_file_..mnt..scrap..repronim..data..ds000003-qc..sourcedata..sub-02..func..sub-02_task-rhymejudgment_bold.nii.gz/bet_msk/sub-02_task-rhymejudgment_bold_valid_volreg_tstat_brain_mask.nii.gz -ero /mnt/scrap/repronim/data/ds000003-qc/work/workflow_enumerator/funcMRIQC/fMRIBrainMask/_in_file_..mnt..scrap..repronim..data..ds000003-qc..sourcedata..sub-02..func..sub-02_task-rhymejudgment_bold.nii.gz/erode/sub-02_task-rhymejudgment_bold_valid_volreg_tstat_brain_mask_ero.nii.gz
+

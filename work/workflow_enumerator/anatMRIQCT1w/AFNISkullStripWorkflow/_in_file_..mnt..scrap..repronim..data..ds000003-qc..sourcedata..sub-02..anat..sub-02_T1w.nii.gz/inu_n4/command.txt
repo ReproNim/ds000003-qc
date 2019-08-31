@@ -1,0 +1,2 @@
+N4BiasFieldCorrection -d 3 --input-image /mnt/scrap/repronim/data/ds000003-qc/work/workflow_enumerator/anatMRIQCT1w/_in_file_..mnt..scrap..repronim..data..ds000003-qc..sourcedata..sub-02..anat..sub-02_T1w.nii.gz/conform/sub-02_T1w_conformed.nii.gz --output [ sub-02_T1w_conformed_corrected.nii.gz, sub-02_T1w_conformed_bias.nii.gz ]
+

@@ -1,0 +1,2 @@
+N4BiasFieldCorrection -d 3 --input-image /mnt/scrap/repronim/data/ds000003-qc/work/workflow_enumerator/funcMRIQC/_in_file_..mnt..scrap..repronim..data..ds000003-qc..sourcedata..sub-02..func..sub-02_task-rhymejudgment_bold.nii.gz/mean/sub-02_task-rhymejudgment_bold_valid_volreg_tstat.nii.gz --output sub-02_task-rhymejudgment_bold_valid_volreg_tstat_corrected.nii.gz
+

@@ -1,0 +1,970 @@
+[
+    {
+        "group": 1,
+        "imports": [],
+        "name": "000_conform",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "000_conform"
+        ],
+        "name": "001_PlotMosaicNoise",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "000_conform"
+        ],
+        "name": "002_RotationMask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "000_conform"
+        ],
+        "name": "003_inu_n4",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "003_inu_n4"
+        ],
+        "name": "004_fsl_bet",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "003_inu_n4"
+        ],
+        "name": "005_skullstrip",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "005_skullstrip",
+            "000_conform"
+        ],
+        "name": "006_sstrip_orig_vol",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "006_sstrip_orig_vol"
+        ],
+        "name": "007_segmentation",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "007_segmentation",
+            "003_inu_n4"
+        ],
+        "name": "008_harmonize",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "006_sstrip_orig_vol"
+        ],
+        "name": "009_binarize",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "009_binarize",
+            "000_conform"
+        ],
+        "name": "010_PlotMosaicZoomed",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "010_PlotMosaicZoomed",
+            "001_PlotMosaicNoise"
+        ],
+        "name": "011_MergePlots",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "009_binarize",
+            "000_conform"
+        ],
+        "name": "012_smoothness",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "009_binarize",
+            "003_inu_n4"
+        ],
+        "name": "013_SpatialNormalization",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "013_SpatialNormalization",
+            "000_conform"
+        ],
+        "name": "014_MNItpms2t1",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "009_binarize",
+            "013_SpatialNormalization"
+        ],
+        "name": "015_invert_xfm",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "004_fsl_bet",
+            "015_invert_xfm",
+            "002_RotationMask",
+            "000_conform"
+        ],
+        "name": "016_ArtifactMask",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "016_ArtifactMask",
+            "000_conform"
+        ],
+        "name": "017_ComputeQI2",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "004_fsl_bet",
+            "016_ArtifactMask",
+            "008_harmonize",
+            "007_segmentation",
+            "002_RotationMask",
+            "012_smoothness",
+            "003_inu_n4",
+            "000_conform",
+            "014_MNItpms2t1"
+        ],
+        "name": "018_measures",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "016_ArtifactMask",
+            "002_RotationMask"
+        ],
+        "name": "019_provenance",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [],
+        "name": "020_metadata",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "020_metadata",
+            "019_provenance",
+            "017_ComputeQI2",
+            "018_measures"
+        ],
+        "name": "021_datasink",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "021_datasink",
+            "011_MergePlots"
+        ],
+        "name": "022_GenerateReport",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "022_GenerateReport"
+        ],
+        "name": "023_dsplots",
+        "size": 1
+    },
+    {
+        "group": 1,
+        "imports": [
+            "021_datasink"
+        ],
+        "name": "024_UploadMetrics",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [],
+        "name": "025_conform",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "025_conform"
+        ],
+        "name": "026_PlotMosaicNoise",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "025_conform"
+        ],
+        "name": "027_RotationMask",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "025_conform"
+        ],
+        "name": "028_inu_n4",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "028_inu_n4"
+        ],
+        "name": "029_fsl_bet",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "028_inu_n4"
+        ],
+        "name": "030_skullstrip",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "030_skullstrip",
+            "025_conform"
+        ],
+        "name": "031_sstrip_orig_vol",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "031_sstrip_orig_vol"
+        ],
+        "name": "032_segmentation",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "032_segmentation",
+            "028_inu_n4"
+        ],
+        "name": "033_harmonize",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "031_sstrip_orig_vol"
+        ],
+        "name": "034_binarize",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "034_binarize",
+            "025_conform"
+        ],
+        "name": "035_PlotMosaicZoomed",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "035_PlotMosaicZoomed",
+            "026_PlotMosaicNoise"
+        ],
+        "name": "036_MergePlots",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "034_binarize",
+            "025_conform"
+        ],
+        "name": "037_smoothness",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "034_binarize",
+            "028_inu_n4"
+        ],
+        "name": "038_SpatialNormalization",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "038_SpatialNormalization",
+            "025_conform"
+        ],
+        "name": "039_MNItpms2t1",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "034_binarize",
+            "038_SpatialNormalization"
+        ],
+        "name": "040_invert_xfm",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "029_fsl_bet",
+            "040_invert_xfm",
+            "027_RotationMask",
+            "025_conform"
+        ],
+        "name": "041_ArtifactMask",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "041_ArtifactMask",
+            "025_conform"
+        ],
+        "name": "042_ComputeQI2",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "029_fsl_bet",
+            "041_ArtifactMask",
+            "033_harmonize",
+            "032_segmentation",
+            "027_RotationMask",
+            "037_smoothness",
+            "028_inu_n4",
+            "025_conform",
+            "039_MNItpms2t1"
+        ],
+        "name": "043_measures",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "041_ArtifactMask",
+            "027_RotationMask"
+        ],
+        "name": "044_provenance",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [],
+        "name": "045_metadata",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "045_metadata",
+            "044_provenance",
+            "042_ComputeQI2",
+            "043_measures"
+        ],
+        "name": "046_datasink",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "046_datasink",
+            "036_MergePlots"
+        ],
+        "name": "047_GenerateReport",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "047_GenerateReport"
+        ],
+        "name": "048_dsplots",
+        "size": 1
+    },
+    {
+        "group": 2,
+        "imports": [
+            "046_datasink"
+        ],
+        "name": "049_UploadMetrics",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [],
+        "name": "050_non_steady_state_detector",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "050_non_steady_state_detector"
+        ],
+        "name": "051_sanitize",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "051_sanitize"
+        ],
+        "name": "052_SpikesMask",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "052_SpikesMask",
+            "051_sanitize"
+        ],
+        "name": "053_SpikesFinderBgMask",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "051_sanitize"
+        ],
+        "name": "054_gen_ref",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "051_sanitize",
+            "054_gen_ref"
+        ],
+        "name": "055_motion_correct",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "055_motion_correct"
+        ],
+        "name": "056_quality",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "055_motion_correct"
+        ],
+        "name": "057_compute_tsnr",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "057_compute_tsnr"
+        ],
+        "name": "058_PlotMosaicSD",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "055_motion_correct"
+        ],
+        "name": "059_mean",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "059_mean"
+        ],
+        "name": "060_PlotMosaicMean",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "059_mean"
+        ],
+        "name": "061_SharpenEPI",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "059_mean"
+        ],
+        "name": "062_bet_msk",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "062_bet_msk"
+        ],
+        "name": "063_erode",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "055_motion_correct",
+            "063_erode"
+        ],
+        "name": "064_gcor",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "055_motion_correct",
+            "063_erode"
+        ],
+        "name": "065_outliers",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "059_mean",
+            "063_erode"
+        ],
+        "name": "066_smoothness",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "055_motion_correct",
+            "063_erode"
+        ],
+        "name": "067_ComputeDVARS",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "061_SharpenEPI",
+            "063_erode"
+        ],
+        "name": "068_EPI2MNI",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "059_mean",
+            "068_EPI2MNI"
+        ],
+        "name": "069_ResampleSegmentation",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "055_motion_correct"
+        ],
+        "name": "070_ComputeFD",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "055_motion_correct",
+            "069_ResampleSegmentation",
+            "065_outliers",
+            "063_erode",
+            "053_SpikesFinderBgMask",
+            "070_ComputeFD",
+            "067_ComputeDVARS"
+        ],
+        "name": "071_BigPlot",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "058_PlotMosaicSD",
+            "071_BigPlot",
+            "060_PlotMosaicMean"
+        ],
+        "name": "072_MergePlots",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "055_motion_correct",
+            "059_mean",
+            "066_smoothness",
+            "057_compute_tsnr",
+            "063_erode",
+            "070_ComputeFD",
+            "067_ComputeDVARS"
+        ],
+        "name": "073_measures",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [],
+        "name": "074_provenance",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [],
+        "name": "075_metadata",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "056_quality",
+            "065_outliers",
+            "064_gcor",
+            "075_metadata",
+            "074_provenance",
+            "050_non_steady_state_detector",
+            "073_measures"
+        ],
+        "name": "076_datasink",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "072_MergePlots",
+            "076_datasink"
+        ],
+        "name": "077_GenerateReport",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "077_GenerateReport"
+        ],
+        "name": "078_dsplots",
+        "size": 1
+    },
+    {
+        "group": 3,
+        "imports": [
+            "076_datasink"
+        ],
+        "name": "079_UploadMetrics",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [],
+        "name": "080_non_steady_state_detector",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "080_non_steady_state_detector"
+        ],
+        "name": "081_sanitize",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "081_sanitize"
+        ],
+        "name": "082_SpikesMask",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "082_SpikesMask",
+            "081_sanitize"
+        ],
+        "name": "083_SpikesFinderBgMask",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "081_sanitize"
+        ],
+        "name": "084_gen_ref",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "081_sanitize",
+            "084_gen_ref"
+        ],
+        "name": "085_motion_correct",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "085_motion_correct"
+        ],
+        "name": "086_quality",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "085_motion_correct"
+        ],
+        "name": "087_compute_tsnr",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "087_compute_tsnr"
+        ],
+        "name": "088_PlotMosaicSD",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "085_motion_correct"
+        ],
+        "name": "089_mean",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "089_mean"
+        ],
+        "name": "090_PlotMosaicMean",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "089_mean"
+        ],
+        "name": "091_SharpenEPI",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "089_mean"
+        ],
+        "name": "092_bet_msk",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "092_bet_msk"
+        ],
+        "name": "093_erode",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "085_motion_correct",
+            "093_erode"
+        ],
+        "name": "094_gcor",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "085_motion_correct",
+            "093_erode"
+        ],
+        "name": "095_outliers",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "089_mean",
+            "093_erode"
+        ],
+        "name": "096_smoothness",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "085_motion_correct",
+            "093_erode"
+        ],
+        "name": "097_ComputeDVARS",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "091_SharpenEPI",
+            "093_erode"
+        ],
+        "name": "098_EPI2MNI",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "089_mean",
+            "098_EPI2MNI"
+        ],
+        "name": "099_ResampleSegmentation",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "085_motion_correct"
+        ],
+        "name": "100_ComputeFD",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "085_motion_correct",
+            "099_ResampleSegmentation",
+            "095_outliers",
+            "093_erode",
+            "083_SpikesFinderBgMask",
+            "100_ComputeFD",
+            "097_ComputeDVARS"
+        ],
+        "name": "101_BigPlot",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "088_PlotMosaicSD",
+            "101_BigPlot",
+            "090_PlotMosaicMean"
+        ],
+        "name": "102_MergePlots",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "085_motion_correct",
+            "089_mean",
+            "096_smoothness",
+            "087_compute_tsnr",
+            "093_erode",
+            "100_ComputeFD",
+            "097_ComputeDVARS"
+        ],
+        "name": "103_measures",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [],
+        "name": "104_provenance",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [],
+        "name": "105_metadata",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "086_quality",
+            "095_outliers",
+            "094_gcor",
+            "105_metadata",
+            "104_provenance",
+            "080_non_steady_state_detector",
+            "103_measures"
+        ],
+        "name": "106_datasink",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "102_MergePlots",
+            "106_datasink"
+        ],
+        "name": "107_GenerateReport",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "107_GenerateReport"
+        ],
+        "name": "108_dsplots",
+        "size": 1
+    },
+    {
+        "group": 4,
+        "imports": [
+            "106_datasink"
+        ],
+        "name": "109_UploadMetrics",
+        "size": 1
+    }
+]

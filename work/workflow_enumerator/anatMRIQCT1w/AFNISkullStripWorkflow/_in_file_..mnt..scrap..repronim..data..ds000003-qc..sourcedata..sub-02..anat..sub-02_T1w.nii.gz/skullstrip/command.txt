@@ -1,0 +1,2 @@
+3dSkullStrip -input /mnt/scrap/repronim/data/ds000003-qc/work/workflow_enumerator/anatMRIQCT1w/AFNISkullStripWorkflow/_in_file_..mnt..scrap..repronim..data..ds000003-qc..sourcedata..sub-02..anat..sub-02_T1w.nii.gz/skullstrip/sub-02_T1w_conformed_corrected.nii.gz -prefix sub-02_T1w_conformed_corrected_skullstrip.nii.gz
+

@@ -1,0 +1,2 @@
+fslmaths /mnt/scrap/repronim/data/ds000003-qc/work/workflow_enumerator/anatMRIQCT1w/AFNISkullStripWorkflow/_in_file_..mnt..scrap..repronim..data..ds000003-qc..sourcedata..sub-02..anat..sub-02_T1w.nii.gz/sstrip_orig_vol/sub-02_T1w_conformed_calc.nii.gz -thr 0.0010000000 -bin /mnt/scrap/repronim/data/ds000003-qc/work/workflow_enumerator/anatMRIQCT1w/AFNISkullStripWorkflow/_in_file_..mnt..scrap..repronim..data..ds000003-qc..sourcedata..sub-02..anat..sub-02_T1w.nii.gz/binarize/sub-02_T1w_conformed_calc_thresh.nii.gz
+

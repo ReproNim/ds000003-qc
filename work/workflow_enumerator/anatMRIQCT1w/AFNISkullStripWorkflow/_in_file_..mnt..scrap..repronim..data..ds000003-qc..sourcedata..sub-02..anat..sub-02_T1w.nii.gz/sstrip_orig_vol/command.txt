@@ -1,0 +1,2 @@
+3dcalc -a /mnt/scrap/repronim/data/ds000003-qc/work/workflow_enumerator/anatMRIQCT1w/_in_file_..mnt..scrap..repronim..data..ds000003-qc..sourcedata..sub-02..anat..sub-02_T1w.nii.gz/conform/sub-02_T1w_conformed.nii.gz -b /mnt/scrap/repronim/data/ds000003-qc/work/workflow_enumerator/anatMRIQCT1w/AFNISkullStripWorkflow/_in_file_..mnt..scrap..repronim..data..ds000003-qc..sourcedata..sub-02..anat..sub-02_T1w.nii.gz/skullstrip/sub-02_T1w_conformed_corrected_skullstrip.nii.gz -expr "a*step(b)" -prefix sub-02_T1w_conformed_calc.nii.gz
+
